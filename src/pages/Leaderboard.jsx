@@ -124,8 +124,8 @@ export default function Leaderboard() {
   return (
     <div ref={containerRef} className="w-full min-h-screen bg-deep-void relative pt-32 pb-24">
       {/* Background Spline */}
-      <div className="fixed inset-0 z-0 opacity-20 mix-blend-screen pointer-events-none">
-        <canvas ref={canvasRef} id="canvas3d" className="w-full h-full outline-none" />
+      <div className="fixed inset-0 z-0 pointer-events-none" style={{ opacity: 0.2, mixBlendMode: 'screen' }}>
+        <canvas ref={canvasRef} id="leaderboard-canvas3d" style={{ width: '100vw', height: '100vh', display: 'block' }} />
       </div>
       
       <div className="max-w-7xl mx-auto px-4 sm:px-6 flex flex-col gap-12 relative z-10">

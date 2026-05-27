@@ -119,8 +119,8 @@ export default function Docs() {
   return (
     <div ref={containerRef} className="w-full min-h-screen bg-deep-void relative md:flex">
       {/* Background Spline */}
-      <div className="fixed inset-0 z-0 opacity-20 mix-blend-screen pointer-events-none">
-        <canvas ref={canvasRef} id="canvas3d" className="w-full h-full outline-none" />
+      <div className="fixed inset-0 z-0 pointer-events-none" style={{ opacity: 0.2, mixBlendMode: 'screen' }}>
+        <canvas ref={canvasRef} id="docs-canvas3d" style={{ width: '100vw', height: '100vh', display: 'block' }} />
       </div>
       
       {/* Mobile Native Dropdown Nav */}
